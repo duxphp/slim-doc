@@ -1,6 +1,7 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
-import { recoTheme } from 'vuepress-theme-reco'
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance"
+import {recoTheme} from 'vuepress-theme-reco'
+import {mdEnhancePlugin} from "vuepress-plugin-md-enhance"
+
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
@@ -18,16 +19,20 @@ export default defineUserConfig({
       '/docs/': [
         {
           text: '基础',
-          children: [ '/docs/guide/introduce', '/docs/guide/life', '/docs/guide/quick', '/docs/guide/config' ]
+          children: ['/docs/guide/introduce', '/docs/guide/life', '/docs/guide/quick', '/docs/guide/directory', '/docs/guide/config']
         },
         {
-          text: '进阶',
+          text: '应用',
+          children: ['/docs/app/introduce', '/docs/app/quick']
+        },
+        {
+          text: '类库',
           children: []
         },
         {
-          text: '高级',
+          text: '前端',
           children: []
-        }
+        },
       ]
     },
   }),

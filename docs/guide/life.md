@@ -57,3 +57,7 @@ flowchart TB
 
 系统使用 [slim](https://www.slimframework.com/docs/v4/objects/routing.html) 的路由，所以控制器方法的参数为路由回调参数，通过参数可获取由客户端发起的数据，也可返回给客户端数据。
 
+
+## 目录结构
+
+在 php-fpm 模式下客户端每次运行程序都会从头到尾执行系统的加载步骤，该模式下可配合缓存来进行客户端的加速访问。
