@@ -23,11 +23,11 @@ export default defineUserConfig({
         },
         {
           text: '应用',
-          children: ['/docs/app/introduce', '/docs/app/quick']
+          children: ['/docs/app/introduce', '/docs/app/quick', '/docs/app/route', '/docs/app/permission', '/docs/app/menu', '/docs/app/model', '/docs/app/event']
         },
         {
-          text: '类库',
-          children: []
+          text: '扩展',
+          children: ['/docs/extend/lib', '/docs/extend/func', '/docs/extend/middleware', '/docs/extend/command', '/docs/extend/package']
         },
         {
           text: '前端',
