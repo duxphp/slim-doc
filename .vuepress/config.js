@@ -26,7 +26,7 @@ export default defineUserConfig({
           children: ['/docs/app/introduce', '/docs/app/quick', '/docs/app/route', '/docs/app/permission', '/docs/app/menu', '/docs/app/model', '/docs/app/event']
         },
         {
-          text: '扩展',
+          text: '高级',
           children: ['/docs/extend/lib', '/docs/extend/func', '/docs/extend/middleware', '/docs/extend/command', '/docs/extend/package']
         },
         {
