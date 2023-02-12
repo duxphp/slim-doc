@@ -1,0 +1,39 @@
+Arguments: 
+  /usr/local/Cellar/node/19.6.0/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/lixinhua/bin:/usr/local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/lixinhua/.composer/vendor/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Volumes/Web/slim-doc/package.json: Expected double-quoted property name in JSON at position 183
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "devDependencies": {
+      "vuepress": "^2.0.0-beta.60",
+      "vuepress-plugin-md-enhance": "^2.0.0-beta.174"
+    },
+    "dependencies": {
+      "vuepress-theme-reco": "^2.0.0-beta.48",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
