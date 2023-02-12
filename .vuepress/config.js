@@ -31,7 +31,7 @@ export default defineUserConfig({
         },
         {
           text: '前端',
-          children: []
+          children: ['/docs/client/introduce']
         },
       ]
     },

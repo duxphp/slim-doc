@@ -3,16 +3,20 @@ lang: zh-CN
 title: 命令工具
 ---
 
-DuxLite 使用 [symfony console](https://symfony.com/doc/current/console.html) 封装了部分常用命令工具，您也可以自行扩展命令工具。
+DuxLite 使用 [symfony console](https://symfony.com/doc/current/console.html) 封装了部分常用命令工具。
 
-请修改以下配置文件并加入自己的命令路径即可。
+
+## 配置文件
+
+要添加自己的命令路径，请修改以下配置文件：
+
 ```
 config/cammand.yaml
 ```
 
-## 使用命令
+## 列出所有可用命令
 
-您可以通过在系统根目录中执行以下命令来列出所有可用命令：
+在系统根目录中执行以下命令来列出所有可用命令：
 
 ```bash
 ./dux
@@ -20,7 +24,7 @@ config/cammand.yaml
 
 ## 路由列表
 
-以表格方式列出所有注册的路由列表，可以传递分组参数列出对应注册的路由列表
+列出所有已注册的路由列表，可以传递分组参数以列出特定组的路由列表：
 
 ```bash 
 ./dux route
@@ -28,7 +32,7 @@ config/cammand.yaml
 
 ## 权限列表
 
-以表格方式列出所有注册的权限列表，可以传递分组参数列出对应注册的权限列表
+列出所有已注册的权限列表，可以传递分组参数以列出特定组的权限列表：
 
 ```bash 
 ./dux route
@@ -36,7 +40,7 @@ config/cammand.yaml
 
 ## 事件列表
 
-以表格方式列出所有事件名称对应的监听类或回调，如果为回调则不显示具体内容。
+列出所有已注册事件的监听类或回调函数，如果是回调函数则不显示具体内容：
 
 ```bash 
 ./dux event
@@ -44,7 +48,7 @@ config/cammand.yaml
 
 ## 数据模型列表
 
-列出所有已注册同步的数据模型
+列出所有已注册的数据模型：
 
 ```bash 
 ./dux db:list
@@ -52,15 +56,14 @@ config/cammand.yaml
 
 ## 数据模型同步
 
-将数据模型字段同步至数据库中，并完成增加和修改字段。
+将数据模型的字段同步至数据库中，如果数据库中不存在相应的表则会自动创建，同时增加和修改字段：
 
 ```bash 
 ./dux db:sync
 ```
 
 ## 队列运行
-
-启动队列服务执行队列任务，可以传递分组参数来执行不同的队列，默认为default队列
+启动队列服务并执行队列任务，可以传递分组参数以执行不同的队列，默认为 `default` 队列：
 
 ```bash 
 ./dux queue
@@ -68,11 +71,11 @@ config/cammand.yaml
 
 ## 代码生成工具
 
-代码生成工具作为脚手架提供基础的代码生成，生成后的代码需要继续修改使用。
+代码生成工具提供基础的代码生成，生成后的代码需要根据需要修改使用。
 
 ### 生成应用
 
-生成后的应用会自动将入口类注册到配置中。
+生成后的应用会自动将入口类注册到配置中：
 
 ```bash 
 ./dux generate:app 应用名
@@ -80,7 +83,7 @@ config/cammand.yaml
 
 ### 生成控制器
 
-根据提示输入控制器层名与类名，同时会自动生成到路由配置中。
+根据提示输入控制器层名和类名，同时会自动添加到路由配置中：
 
 ```bash 
 ./dux generate:ctr 应用名
@@ -88,7 +91,8 @@ config/cammand.yaml
 
 ### 生成管理端控制器
 
-根据提示输入控制器层名与类名，同时会自动生成到路由、权限配置与前端文件，前端文件路由需要手动注册。
+
+根据提示输入控制器层名和类名，同时会自动生成路由、权限配置和前端文件，但需要手动将前端文件路由注册到路由配置中：
 
 ```bash 
 ./dux generate:manage 应用名
@@ -96,7 +100,7 @@ config/cammand.yaml
 
 ## 生成模型
 
-根据提示输入模型类名，会自动生成到应用的 `Models` 目录中。
+根据提示输入模型类名，会自动生成到应用的 `Models` 目录中：
 
 ```bash 
 ./dux generate:model 应用名
@@ -105,6 +109,8 @@ config/cammand.yaml
 
 ## 应用管理
 
+以下是DuxLite中应用管理的命令：
+
 ### 列出应用列表
 
 ```bash 
@@ -112,8 +118,7 @@ config/cammand.yaml
 ```
 
 ### 安装应用
-
-应用名为composer包名，如 `duxphp\lite-base`，该命令会将 composer 中的 DuxLite 应用安装到系统的 `app` 目录中。
+安装DuxLite应用到系统的 `app` 目录中，应用名为 composer 包名，如 `duxphp\lite-base`：
 
 ```bash 
 ./dux app:install 应用名
