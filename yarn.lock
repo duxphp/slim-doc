@@ -5581,7 +5581,7 @@ vue@^3.2.45, vue@^3.2.47:
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
 
-vuepress-plugin-md-enhance@^2.0.0-beta.174:
+vuepress-plugin-md-enhance@^2.0.0-beta.173:
   version "2.0.0-beta.174"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-md-enhance/-/vuepress-plugin-md-enhance-2.0.0-beta.174.tgz#02cf45016733b50f6d9ff0acfbfca9651d255499"
   integrity sha512-GJIIQQV3RXvdBXnDrzZtS6Yvd72svOvFGjrYsIwPpgOd2dTwpdID2/1yD4wkC01ZMwqFW5rdRFp+8x3AWD4cpA==
