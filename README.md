@@ -33,3 +33,7 @@ composer create-project duxphp/duxlite
 # 启动web服务
 php -S localhost:8000 -t public
 ```
+
+### 文档说明
+
+本文档仅介绍 DuxLite 相关开发，其中集成的第三方类库请，查看类库各自文档，本文档部分内容由 ChatGPT 编写，如有错误请进行反馈。
