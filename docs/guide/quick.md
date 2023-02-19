@@ -25,10 +25,14 @@ mkdir duxlite
 cd duxlite
 ```
 
-2. 初始化项目文件
+2. 初始化项目文件，根据需要选择版本
 
 ```bash
+// 正式版 - 未发布时不可用
 composer create-project duxphp/duxlite
+
+// 开发版 - 开发内部使用
+composer create-project duxphp/duxlite:dev-main
 ```
 
 3. 给于dux命令权限
@@ -61,9 +65,13 @@ db:
 
 ```bash
 // 下载应用包
+
+// 正式版
 composer require duxphp/lite-base
-// 将包安装到应用内
-./dux app:install duxphp/lite-base
+
+// 开发版
+composer require duxphp/lite-base:dev-main
+
 // 数据库同步
 ./dux db:sync
 ```

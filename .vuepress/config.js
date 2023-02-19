@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: 'DuxLite',
-  description: '这是我的第一个 VuePress 站点',
+  description: 'DuxLite 开发使用文档',
   theme: recoTheme({
     navbar: [
       // NavbarItem
