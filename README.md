@@ -28,7 +28,7 @@ footer: # 底部模块的配置
 mkdir duxlite && cd duxlite
 
 # 安装项目
-composer create-project duxphp/duxlite
+composer create-project duxphp/duxlite:dev-main
 
 # 启动web服务
 php -S localhost:8000 -t public

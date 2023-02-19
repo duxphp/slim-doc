@@ -33,6 +33,10 @@ export default defineUserConfig({
           text: '前端',
           children: ['/docs/client/introduce']
         },
+        {
+          text: '应用',
+          children: ['/docs/package/banner', '/docs/package/menu', '/docs/package/sms', '/docs/package/member', '/docs/package/mall', '/docs/package/mall-sale']
+        },
       ]
     },
   }),
