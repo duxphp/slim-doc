@@ -9,7 +9,7 @@ modules:
 bannerBrand:
   title: dux-lite
   description: 一款轻量级的 PHP 基础开发框架
-  tagline: 基于 php8.1 并使用严格模式与 Psr 系列规范的应用化架构框架，React 前后端分离 RESTful 风格 Api，所有功能开箱即用，低耦合设计模块即插即用，同时拒绝隐晦式的方法调用，采用主流 Composer 三方包，无开发与维护负担。
+  tagline: 基于 php8.2 并使用严格模式与 Psr 系列规范的应用化架构框架，React 前后端分离 RESTful 风格 Api，所有功能开箱即用，低耦合设计模块即插即用，同时拒绝隐晦式的方法调用，采用主流 Composer 三方包，无开发与维护负担。
   bgImage: /bg.svg
   buttons:
   - { text: 快速开始, link: '#快速开始' }

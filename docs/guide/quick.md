@@ -7,7 +7,7 @@ title: 快速上手
 
 ## 依赖环境
 
-- PHP 8.1+
+- PHP 8.2+
 - Mysql 5.7+
 - Composer 2.0+
 - Redis
