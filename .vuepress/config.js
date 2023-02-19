@@ -35,7 +35,7 @@ export default defineUserConfig({
         },
         {
           text: '应用',
-          children: ['/docs/package/banner', '/docs/package/menu', '/docs/package/sms', '/docs/package/member', '/docs/package/mall', '/docs/package/mall-sale']
+          children: ['/docs/package/banner', '/docs/package/menu', '/docs/package/sms', '/docs/package/member', '/docs/package/mall', '/docs/package/mall-sale', '/docs/package/order', '/docs/package/account']
         },
       ]
     },

@@ -8,7 +8,7 @@ title: 会员中心
 ## 安装
 
 ``` bash
-composer require duxphp/lite-member:dev-main 
+composer require duxphp/lite-member:dev-master
 ```
 
 ## 权限

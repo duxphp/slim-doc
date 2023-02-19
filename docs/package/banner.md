@@ -8,7 +8,7 @@ title: 轮播图
 ## 安装
 
 ``` bash
-composer require duxphp/lite-banner:dev-main 
+composer require duxphp/lite-banner:dev-master
 ```
 
 ## 权限

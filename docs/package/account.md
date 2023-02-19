@@ -1,14 +1,14 @@
 ---
 lang: zh-CN
-title: 商城分销
+title: 基础商城
 ---
 
-为系统提供基础B2B2C商城的分销模块应用。
+为系统提供基础账户管理与支付应用。
 
 ## 安装
 
 ``` bash
-composer require duxphp/lite-mall-sale:dev-master
+composer require duxphp/lite-account:dev-master 
 ```
 
 ## 权限

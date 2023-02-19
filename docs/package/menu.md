@@ -8,7 +8,7 @@ title: 轮播图
 ## 安装
 
 ``` bash
-composer require duxphp/lite-menu:dev-main 
+composer require duxphp/lite-menu:dev-master
 ```
 
 ## 权限

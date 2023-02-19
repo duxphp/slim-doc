@@ -8,7 +8,7 @@ title: 基础商城
 ## 安装
 
 ``` bash
-composer require duxphp/lite-mall:dev-main 
+composer require duxphp/lite-mall:dev-master 
 ```
 
 ## 权限

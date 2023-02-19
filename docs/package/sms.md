@@ -8,7 +8,7 @@ title: 短信发送
 ## 安装
 
 ``` bash
-composer require duxphp/lite-sms:dev-main 
+composer require duxphp/lite-sms:dev-master
 ```
 
 ## 权限
