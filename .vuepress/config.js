@@ -1,21 +1,24 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
-import {recoTheme} from 'vuepress-theme-reco'
 import {mdEnhancePlugin} from "vuepress-plugin-md-enhance"
+import {searchPlugin} from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: 'DuxLite',
-  description: 'DuxLite 开发使用文档',
-  theme: recoTheme({
+  description: '一款轻量级的 PHP 基础开发框架',
+  theme: defaultTheme({
     navbar: [
-      // NavbarItem
       {
         text: '文档',
         link: '/docs/guide/introduce',
       },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/duxphp/lite',
+      },
     ],
-    series: {
+    sidebar: {
       '/docs/': [
         {
           text: '基础',
@@ -45,6 +48,9 @@ export default defineUserConfig({
       mermaid: true,
       align: true,
       imgSize: true,
-    })
+    }),
+    searchPlugin({
+      // 配置项
+    }),
   ]
 })

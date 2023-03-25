@@ -2,22 +2,31 @@
 lang: zh-CN
 title: duxlite 开发系统
 home: true
-modules:
-  - BannerBrand
-  - MdContent
-  - Footer
-bannerBrand:
-  title: dux-lite
-  description: 一款轻量级的 PHP 基础开发框架
-  tagline: 基于 php8.2 并使用严格模式与 Psr 系列规范的应用化架构框架，React 前后端分离 RESTful 风格 Api，所有功能开箱即用，低耦合设计模块即插即用，同时拒绝隐晦式的方法调用，采用主流 Composer 三方包，无开发与维护负担。
-  bgImage: /bg.svg
-  buttons:
-  - { text: 快速开始, link: '#快速开始' }
-  - { text: 指南, link: '/docs/guide/introduce', type: 'plain' }
+heroImage: /logo.png
+heroHeight: 100
+actions:
+  - text: 快速开始
+    link: /#快速开始
+    type: primary
+  - text: 指南
+    link: /docs/guide/introduce
+    type: secondary
 
-footer: # 底部模块的配置
-  record: 域名备案文案
-  recordLink: 域名备案地址
+features:
+  - title: 大道至简
+    details: 基于 SlimPHP 路由框架，外加简单的使用方法，一个类包含所有显性类库调用，拒绝复杂设计模式。
+  - title: Psr 标准
+    details: 集成了各大 Psr 规范化的主流组件，如 PSR-7、PSR-11、PSR-15 等，提供高度的可扩展性和互操作性。
+  - title: 易于维护
+    details: 不做过度封装，便于开发者灵活选择和随版本升级。
+  - title: 高扩展性
+    details: 采用应用入口式的模块化设计，提高项目的可维护性和可扩展性。
+  - title: Eloquent ORM
+    details: 整合 Eloquent ORM 10.x 作为主要的数据驱动，提供良好的数据库操作支持。
+  - title: 组件整合
+    details: 整合常用三方维护库，并进行全局懒加载，无加载压力，同时封装常用 JWT 权限等验证类库。
+
+footer: MIT Licensed | Copyright ©2023 duxweb
 ---
 
 ### 快速开始
@@ -33,7 +42,3 @@ composer create-project duxphp/duxlite:dev-main
 # 启动web服务
 php -S localhost:8000 -t public
 ```
-
-### 文档说明
-
-本文档仅介绍 DuxLite 相关开发，其中集成的第三方类库请，查看类库各自文档，本文档部分内容由 ChatGPT 编写，如有错误请进行反馈。
