@@ -27,7 +27,7 @@ export default defineUserConfig({
         },
         {
           text: '高级',
-          children: ['/docs/extend/lib', '/docs/extend/func', '/docs/extend/middleware', '/docs/extend/command', '/docs/extend/package']
+          children: ['/docs/extend/lib', '/docs/extend/func', '/docs/extend/middleware', '/docs/extend/command', '/docs/extend/package', '/docs/extend/debug']
         },
         {
           text: '前端',
