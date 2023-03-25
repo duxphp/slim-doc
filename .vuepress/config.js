@@ -1,6 +1,6 @@
 import {defaultTheme, defineUserConfig} from 'vuepress'
 import {mdEnhancePlugin} from "vuepress-plugin-md-enhance"
-import {searchPlugin} from "@vuepress/plugin-search";
+import {fullTextSearchPlugin} from "vuepress-plugin-full-text-search2";
 
 export default defineUserConfig({
   base: '/',
@@ -49,8 +49,6 @@ export default defineUserConfig({
       align: true,
       imgSize: true,
     }),
-    searchPlugin({
-      // 配置项
-    }),
+    fullTextSearchPlugin(),
   ]
 })
