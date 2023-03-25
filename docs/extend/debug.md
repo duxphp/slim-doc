@@ -31,5 +31,6 @@ clock("debug")
 
 使用前请先在配置 `use.yaml` 中开启该插件服务：
 ```yaml
-clock: true
+app:
+  clock: true
 ```
